@@ -48,24 +48,21 @@ void loop() {
   float hic = dht.computeHeatIndex(t, h, false);
 
 
-  // Serial.print("Humidity: ");
-  // Serial.print(h);
-  // Serial.print(" % ");
+  Serial.print("Humidity: ");
+  Serial.print(h);
+  Serial.print(" % ");
   Serial.print("Temp: ");
   Serial.print(t);
   Serial.print(" \xC2\xB0");
-  Serial.print("C");
-  Serial.println(" ");
-
-
-  // Serial.print(f);
-  // Serial.print(" \xC2\xB0");
-  // Serial.print("F ");
-  // Serial.print("Heat index: ");
-  // Serial.print(hic);
-  // Serial.print(" \xC2\xB0");
-  // Serial.print("C | ");
-  // Serial.print(hif);
-  // Serial.print(" \xC2\xB0");
-  // Serial.println("F");
+  Serial.print("C | ");
+  Serial.print(f);
+  Serial.print(" \xC2\xB0");
+  Serial.print("F ");
+  Serial.print("Heat index: ");
+  Serial.print(hic);
+  Serial.print(" \xC2\xB0");
+  Serial.print("C | ");
+  Serial.print(hif);
+  Serial.print(" \xC2\xB0");
+  Serial.println("F");
 }
